@@ -1,0 +1,466 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: arial system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.mainNetflixContainer{
+    /* border: 2px solid red; */
+    
+    background-color: black;
+    position: relative;
+    height: 100%;
+}
+
+.backgroundContainer{
+    background-image: url('./bannnerImg.jpg');
+    filter: blur(16px);
+    height: 120vh;
+    position: relative;
+}
+
+.pinkOverlay{
+    background-color: rgba(103, 46, 54, 0.404);
+    height: 100%;
+    width: 100%;
+}
+
+.contentContainer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0 0, .5);
+    padding: 1rem 2rem;
+}
+nav{
+    /* border: 2px solid green; */
+    height: 20vh;
+}
+
+.navContainer{
+    
+    width: 100%;
+    
+}
+
+.upperNavBarSection{
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 50%;
+}
+
+.upperNavBarLeftSection{
+    /* border: 2px solid red; */
+    width: 50%;
+    
+}
+
+.netflixLogo{ 
+    width: 29%;
+}
+
+.upperNavBarRightSection{
+    /* border: 2px solid green; */
+    width: 50%;
+}
+
+.languageButton{
+    margin-top: 20px;
+    margin-right: 5px;
+    display: flex;
+    height: 35px;
+    width:100px;
+    padding: 3px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.languageButtonContainer p{
+    margin-left: 5px;
+    
+    
+   
+}
+
+.signInButton button{
+    height: 35px;
+    width:100px;
+    padding: 6px 7px;
+    border-radius: 50px;
+    margin-left: 2px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+.upperNavBarButtonContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.lowerNavBarSection{
+    /* border: 2px solid black; */
+    height: 50%;
+    /* border: 2px solid red; */
+    color: white;
+   display: flex;
+   justify-content: center;
+    
+}
+
+.menuList{
+    
+    width: 40%;
+    height: 60%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 2px 3px 10px rgb(248, 246, 246);
+    position: static;
+}
+
+.bannerSection{
+    /* border: 2px solid red; */
+    height: 90vh;
+    background: url('./bannnerImg.jpg');
+    background-size: 100% 100%;
+    border-radius: 20px;
+    
+    position: relative;
+
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(transparent,black);
+}
+
+.bannerContainer{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerContainer h2{
+    
+    font-size: 4rem;
+    width: 50%;
+    text-align: center;
+}
+
+.bannerContainer h4{
+    font-size: 1.75rem;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.bannerContainer p{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.inputContainer{
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.inputContainer button{
+    border-radius: 50px;
+    width: 200px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+.emailInput{
+    padding: 20px 20px;
+    width: 400px;
+    border-radius: 50px;
+    background: linear-gradient(transparent,rgb(70, 68, 68));
+    border: 1px solid rgb(124, 122, 122);
+}
+
+.emailInput::placeholder{
+    color: rgb(171, 167, 167);
+    font-weight: 400;
+}
+
+.carouselSection{
+    
+    height: 100%;
+    margin-top: 20px;
+}
+
+.carouselContainer{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    position: relative;
+    
+    
+}
+
+.carouselCard{
+    margin-top: 10px;
+    width: 170px;
+    height: 240px;
+    
+    /* border: 2px solid green; */
+    /* border: 2px solid yellow; */
+    
+}
+
+.carouselSection h2{
+    color: white;
+    font-size: 2rem;
+    
+    
+}
+
+.carouselImageContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.carouselImageContainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.carouselNumberContainer span{
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    font-weight: 700;
+    position: absolute;
+    margin-left: -20px;
+}
+
+
+.planContainer{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.planCard1{
+    /* border: 2px solid yellow; */
+    width: 20rem;
+    height: 30vh;
+    padding: 1rem 2rem;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(45deg,rgb(34, 73, 142),rgb(18, 23, 69));
+    
+}
+
+.planCard2{
+    /* border: 2px solid yellow; */
+    width: 20rem;
+    height: 30vh;
+    padding: 1rem 2rem;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(45deg,rgb(34, 73, 142),rgb(18, 23, 69));
+    
+}
+
+.planCard3{
+    /* border: 2px solid yellow; */
+    width: 20rem;
+    height: 30vh;
+    padding: 1rem 2rem;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(45deg,rgb(136, 44, 146),rgb(43, 14, 77));
+    
+}
+
+.planCard4{
+    /* border: 2px solid yellow; */
+    width: 20rem;
+    height: 30vh;
+    padding: 1rem 2rem;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(45deg,rgb(133, 34, 142),rgb(35, 18, 69));
+    
+}
+
+.planUpperContent{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.planLowerContent{
+    position: absolute;
+    bottom: 1rem; /* Adjust as needed */
+    
+}
+
+
+.reasonContainer{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.reasonCard{
+    width: 20rem;
+    height: 30vh;
+    padding: 2rem 2rem;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(35, 35, 35);
+
+    
+}
+
+.reasonCard span svg{
+    height: 50px;
+    width: 50px;
+}
+
+.reasonUpperContent h4{
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.reasonLowerContent{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.faqContainer,.faqSection{
+    margin-top: 20px;
+}
+
+
+.faqQuestion{
+    width: 100%;
+    height: 10vh;
+    border-radius: 15px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.rightPara{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+.faqAnswer{
+    width: 100%;
+    height: 15vh;
+    border-radius: 20px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 1rem 2rem;
+    height: 12vh;
+    display: none;
+    
+}
+
+.faqCard:hover .faqAnswer{
+    align-items: center;
+    display: block;
+    width: 100%;
+    height: 15vh;
+    border-radius: 20px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 1rem 2rem;
+    height: 12vh;
+    background-color: rgb(83, 83, 83);
+}
+
+footer{
+    margin-top: 80px;
+    margin-left: 320px;
+    font-weight: 600;
+    color: rgb(109, 108, 108);
+   
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem; 
+    row-gap: 2rem;
+    max-width: 800px; 
+    margin-top: 20px;
+    text-align: left; 
+   
+}
+
+.footerLanguageButton{
+    margin-top: 60px;
+    display: flex;
+    height: 35px;
+    width:120px;
+    padding: 3px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    align-items: center;
+    justify-content: center; 
+
+}
